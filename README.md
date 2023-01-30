@@ -1,4 +1,4 @@
-# figma-node-demo
+# figma-plugins-mono
 A mono repository containing Figma plugins, examples and templates
 
 Along with the examples are a few NodeJs bridge apps made to 

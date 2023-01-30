@@ -1,8 +1,8 @@
 # figma-plugins-mono
-A mono repository containing Figma plugins, examples and templates
+A mono repository containing Figma plugins, examples and templates.
 
-Along with the examples are a few NodeJs bridge apps made to 
-relay data and mesasges to the plugins. 
+Along with the examples there are a few NodeJs bridge apps made to 
+relay data and mesasges to the plugins over Socket.io. 
 
 ## Figma Plugins
 
@@ -17,8 +17,6 @@ and contains both a plugin and an example .fig file.
 | Rotary Toggle      | Example showing how to receive Socket.io events from a scroll wheel and momentary switch in Figma to rotate a frame and set the position of a toggle switch            |
 | CatFact WebAPI     | Example showing how to fetch json/image data from Web APIs to set text and display images. It also shows how to create layers and objects in the scene from user input |
 | Socket.io Template | Template for getting started with Socket.io connections in Figma plugins                                                                                               |
-
-#### CatFact Web API
 
 ### Running the examples
 

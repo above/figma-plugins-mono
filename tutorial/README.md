@@ -184,12 +184,18 @@ The workflow looks something like this:
 
 When the capabilities of Unity are combined with the flexibility of Figma, we can create a workflow that allows us to collaborate across the team on UI design concepts in VR. To show what such a workflow can look like, we put together a small demo application in the form of a VR planetarium for the Oculus Quest 2 headset with a UI overlay that can be navigated by a scroll wheel and a push button. The following video shows a VR application using Figma and Arduino to create a customizable real-time UI.
 
+
+<!--
 <p style="text-align:center;">
 <video width="640" height="380" controls>
   <source src="./assets/planetarium_full_reduce.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 </p>
+-->
+
+https://user-images.githubusercontent.com/76996973/219697069-3973d9da-1db9-4071-a5a5-ae45ac8e44e9.mp4
+
 
 ### Building out the prototype
 

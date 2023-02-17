@@ -1,0 +1,16 @@
+{
+  "name": "rotary_plugin",
+  "version": "1.0.0",
+  "description": "Simple example template for a rotary encoder with a switch",
+  "main": "code.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "npm run build -- --watch"
+  },
+  "author": "Above Agency",
+  "license": "MIT",
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.57.1",
+    "typescript": "*"
+  }
+}

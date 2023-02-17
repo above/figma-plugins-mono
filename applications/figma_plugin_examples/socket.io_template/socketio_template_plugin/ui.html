@@ -1,0 +1,16 @@
+<!-- load socket.io -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+
+<!-- Create socket, set port -->
+<script>
+  var socket = io("ws://localhost:3000", { transports: ["websocket"] });
+</script>
+
+<h2> Socket.io Template</h2>
+
+<script>
+  socket.on("EVENT_TITLE", (msg) => {
+    parent.postMessage({ pluginMessage: { type: "EVENT_TITLE", msg } }, "*");
+  });
+
+</script>

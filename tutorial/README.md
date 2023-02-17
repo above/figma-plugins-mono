@@ -186,7 +186,7 @@ When the capabilities of Unity are combined with the flexibility of Figma, we ca
 
 <p style="text-align:center;">
 <video width="640" height="380" controls>
-  <source src="./assets/planetarium_full.mp4" type="video/mp4">
+  <source src="./assets/planetarium_full_reduce.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 </p>

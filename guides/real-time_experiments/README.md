@@ -1,13 +1,13 @@
 # Title
 ## Real-time experiments with Figma
 
-![VR/UI split screen](./assets/vr_kay.png?raw=true)
+![VR/UI split screen](../assets/vr_kay.png?raw=true)
 
 Applications like Figma are great for real-time collaborative design. They allow for quick iterative sketching of visual elements alongside building interactive prototypes and trying out UI/UX flows. While Figma is focused on screen-based prototyping, we found a few good ways to expand its real-time capabilities beyond phones and laptops. The Figma Plugin API allows us to integrate hardware interactions and live communication with other software. Embedding a Figma browser instance in Unity enables us to explore UI designs in a 3D environment.
 
 In this article, we are going to introduce some of the ways we’ve worked with the Figma Plugin API. We will be looking at some basics of writing custom plugins for Figma, reading data from different kinds of inputs, and bringing our designs into VR. Finally, we will walk through a demo use case where we are building an interactive UI for a VR planetarium made in Unity. We have created a small GitHub repository with a few examples and templates.
 
-| ![VR Planetarium](./assets/vr_planetarium_gif.gif?raw=true) |
+| ![VR Planetarium](../assets/vr_planetarium_gif.gif?raw=true) |
 |:--:|
 | <b>Integrating hardware input in Figma and bringing our UI prototype into VR.</b>|
 
@@ -50,7 +50,7 @@ Now you should be able to run the plugin from the Figma desktop application from
 
 Figma keeps things separated. The main thread of the plugin is running in a sandboxed JS environment which only has access to the Figma scene or document, while an HTML page has access to the Web and the DOM. The main part of the plugin is written in the file “Code.ts” while the “ui.html” file contains the iframe content.
 
-| ![Figma Plugin Structure](./assets/figma_plugin_structure.png?raw=true) |
+| ![Figma Plugin Structure](../assets/figma_plugin_structure.png?raw=true) |
 |:--:|
 | <b>How plugins run, source [Figma.com](https://www.figma.com/plugin-docs/how-plugins-run)</b>|
 
@@ -96,14 +96,14 @@ This is, of course, only scratching the surface of what Figma plugins are capabl
 
 ### Opening up to the outside world
 
-| ![Figma plugin HW input](./assets/figma_hw_colorwheel.gif?raw=true) |
+| ![Figma plugin HW input](../assets/figma_hw_colorwheel.gif?raw=true) |
 |:--:|
 | <b>Using hardware inputs to update a Figma scene</b>|
 
 Writing plugins for Figma gives us the tools to connect our scene to web APIs, microcontrollers such as Arduino or external software and tools. We can use the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) directly in the plugin to request resources, or we can use the network access of the UI iframe to receive data.
 
 There are some really inspiring examples of combining Figma with external tools.
-| ![Figma plugin HW input](./assets/charli_gerard_figma_ctrl-reduce.gif?raw=true) | ![Figma plugin HW input](./assets/siddharth_ahuja_figma_ctrl.gif?raw=true) |
+| ![Figma plugin HW input](../assets/charli_gerard_figma_ctrl-reduce.gif?raw=true) | ![Figma plugin HW input](../assets/siddharth_ahuja_figma_ctrl.gif?raw=true) |
 |:--:|:--:|
 [ **Charlie Gerard is controlling Figma with hand movements [source](https://charliegerard.dev/blog/hand-control-ui-figma-plugin/)** | **Sidddharth Ahuja is using facial expressions [source](https://twitter.com/sidahuj/status/1437443359224655874).** |
 
@@ -158,7 +158,7 @@ When designing for AR, or other types of spatial interfaces, VR can be a useful 
 
 Integrating Figma into our VR prototypes gives us a tool for quick, iterative, and collaborative sketching. Making any change to the Figma scene will immediately update in the VR application.
 
-| ![Figma VR live edit](./assets/figma_live_edit.gif?raw=true) |
+| ![Figma VR live edit](../assets/figma_live_edit.gif?raw=true) |
 |:--:|
 | **Editing the Figma scene updates all prototype instances and enables real-time collaborative sketching in VR.** |
 
@@ -201,7 +201,7 @@ https://user-images.githubusercontent.com/76996973/219697069-3973d9da-1db9-4071-
 
 First, we created a UI scene in Figma consisting of a menu and multiple frames containing the “modes” of some possible tools to explore the night sky. We set up a Figma plugin and connected the physical inputs to navigate the menu, update objects and toggle overlays. For wireless communication with our plugin, we used an ESP32 board to be able to send OSC data over Wifi to a bridge app.
 
-| ![Figma VR HW navigation](./assets/vr_planetarium_nav.gif?raw=true) |
+| ![Figma VR HW navigation](../assets/vr_planetarium_nav.gif?raw=true) |
 |:--:|
 | **Navigating a menu and selecting "mode" in a Figma prototype with hardware** |
 
@@ -209,14 +209,14 @@ We then built a Unity app with a starry sky we could explore in the VR headset. 
 
 Here we are reading the tilt angle and compass direction as well as identifying if we are looking at a specific constellation and tracking the International Space Station.
 
-| ![Figma VR Constellation Finder](./assets/vr_planetarium_constellation.gif?raw=true) |
+| ![Figma VR Constellation Finder](../assets/vr_planetarium_constellation.gif?raw=true) |
 |:--:|
-| ![Figma VR ISS Finder](./assets/vr_planetarium_iss.gif?raw=true) |
+| ![Figma VR ISS Finder](../assets/vr_planetarium_iss.gif?raw=true) |
 | **Detecting what we are looking at in Unity and sending the data to Figma to update the UI.** |
 
 
 Finally, we put everything together and now have an interactive VR application with external input and a flexible UI built in Figma. We can collaborate on the design across the team and run it in real-time in a 3D environment, and we can try out different hardware input configurations and interactions.
 
-| ![VR Planetarium](./assets/vr_planetarium_gif.gif?raw=true) |
+| ![VR Planetarium](../assets/vr_planetarium_gif.gif?raw=true) |
 |:--:|
 | <b>Integrating hardware input in Figma and bringing our UI prototype into VR.</b>|

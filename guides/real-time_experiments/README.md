@@ -4,7 +4,7 @@
 
 Applications like Figma are great for real-time collaborative design. They allow for quick iterative sketching of visual elements alongside building interactive prototypes and trying out UI/UX flows. While Figma is focused on screen-based prototyping, we found a few good ways to expand its real-time capabilities beyond phones and laptops. The Figma Plugin API allows us to integrate hardware interactions and live communication with other software. Embedding a Figma browser instance in Unity enables us to explore UI designs in a 3D environment.
 
-In this article, we are going to introduce some of the ways we’ve worked with the Figma Plugin API. We will be looking at some basics of writing custom plugins for Figma, reading data from different kinds of inputs, and bringing our designs into VR. Finally, we will walk through a demo use case where we are building an interactive UI for a VR planetarium made in Unity. We have created a section in this GitHub repository with a few examples and templates.
+In this guide, we are going to introduce some of the ways we’ve worked with the Figma Plugin API. We will be looking at some basics of writing custom plugins for Figma, reading data from different kinds of inputs, and bringing our designs into VR. Finally, we will walk through a demo use case where we are building an interactive UI for a VR planetarium made in Unity. We have created a section in this GitHub repository with a few examples and templates.
 
 | ![VR Planetarium](./assets/vr_planetarium_gif.gif?raw=true) |
 |:--:|

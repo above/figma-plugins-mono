@@ -15,7 +15,7 @@ The example is reading 3 types of events:
    "ROTARY_CW" for clockwise rotation
    "ROTARY_CCW" for counterclockwise rotation
 
-![Hue Select Gif](../../assets/rotary_toggle.gif?raw=true)
+![Rotary Toggle Gif](../../assets/rotary_toggle.gif?raw=true)
 
 ## Setup
 Follow the instructions in the /figma-plugins-mono/README.md 

@@ -1,3 +1,7 @@
+** This plugin and the content of this README is created with the Figma plugin template generator **
+
+---  
+
 Below are the steps to get your plugin running. You can also find instructions at:
 
   https://www.figma.com/plugin-docs/setup/
